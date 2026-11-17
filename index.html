@@ -1,788 +1,499 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="dark">
+<html lang="fr" class="no-js">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KANDÉ MOUSSA | Coordinateur QHSE – Systèmes de Management Intégrés</title>
-  <meta name="description" content="CV digital et vitrine professionnelle de KANDÉ MOUSSA, Coordinateur QHSE certifié ISO 9001 Lead Auditor et Lean Six Sigma Green Belt. Spécialisé en SMI (ISO 9001, 14001, 45001), DUER et Audits.">
-  
-  <!-- Google Fonts (Plus Jakarta Sans) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kandé Moussa, coordinateur QHSE à Dakar</title>
+  <meta name="description" content="CV de Kandé Moussa, coordinateur QHSE chez SOMETA SA (sidérurgie, Sébikhotane). Système de management intégré ISO 9001, 14001 et 45001, DUER, audits internes. ISO 9001 Lead Auditor, Lean Six Sigma Green Belt.">
+  <meta property="og:title" content="Kandé Moussa, coordinateur QHSE">
+  <meta property="og:description" content="Quatre postes en deux ans et demi sur un site sidérurgique, et un taux de fréquence des accidents en baisse de 40 %.">
+  <meta property="og:type" content="profile">
+  <meta name="theme-color" content="#FFC20E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- FontAwesome 6 Icons CDN -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  
-  <!-- Stylesheet -->
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,62..125,100..900;1,62..125,100..900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script>
+    (function () {
+      var d = document.documentElement;
+      d.classList.replace('no-js', 'js');
+      if (!window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        d.classList.add('motion');
+        setTimeout(function () { if (!window.gsap) d.classList.remove('motion'); }, 4000);
+      } else {
+        d.classList.add('reduce');
+      }
+    })();
+  </script>
 </head>
 <body>
 
-  <!-- Ambient Navy Background Glows -->
-  <div class="ambient-glow ambient-1"></div>
-  <div class="ambient-glow ambient-2"></div>
-  <div class="ambient-glow ambient-3"></div>
+  <a class="skip" href="#contenu">Aller au contenu</a>
 
-  <!-- Header Navigation Optimisé -->
-  <header class="header" id="header">
-    <div class="container nav-container">
-      <a href="#hero" class="logo">
-        <div class="logo-icon"><i class="fa-solid fa-shield-halved"></i></div>
-        <span id="cv-logo-name">KANDÉ MOUSSA</span>
-      </a>
+  <div class="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <span class="loader__ref">CV-KM</span>
+      <span class="loader__rev">Révision <span class="loader__num">01</span></span>
+    </div>
+  </div>
 
-      <nav>
-        <ul class="nav-menu" id="nav-menu">
-          <li><a href="#hero" class="nav-link active"><i class="fa-solid fa-house"></i> Accueil</a></li>
-          <li><a href="#about" class="nav-link"><i class="fa-solid fa-user-tie"></i> Profil</a></li>
-          <li><a href="#skills" class="nav-link"><i class="fa-solid fa-list-check"></i> Compétences</a></li>
-          <li><a href="#certifications" class="nav-link"><i class="fa-solid fa-certificate"></i> Certifications</a></li>
-          <li><a href="#experience" class="nav-link"><i class="fa-solid fa-briefcase"></i> Expériences</a></li>
-          <li><a href="#education" class="nav-link"><i class="fa-solid fa-graduation-cap"></i> Formation</a></li>
-          <li><a href="#contact" class="nav-link"><i class="fa-solid fa-envelope"></i> Contact</a></li>
-        </ul>
-      </nav>
+  <div class="progress" aria-hidden="true"><span class="progress__bar"></span></div>
 
-      <div class="nav-actions">
-        <!-- Dark/Light Theme Toggle -->
-        <button class="theme-toggle-btn" id="theme-toggle" title="Changer de thème">
-          <i class="fa-solid fa-moon" id="theme-icon"></i>
-        </button>
-
-        <!-- PDF Export Button -->
-        <button class="btn btn-secondary btn-sm" id="btn-export-pdf" title="Télécharger le CV au format PDF">
-          <i class="fa-solid fa-file-pdf"></i> <span>PDF</span>
-        </button>
-
-        <!-- Mobile Toggle -->
-        <button class="mobile-nav-toggle" id="mobile-toggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-      </div>
+  <header class="bar" id="bar">
+    <a href="#top" class="bar__mark" aria-label="Retour en haut">KM</a>
+    <nav class="bar__nav" id="nav" aria-label="Sections">
+      <a href="#chiffres">Chiffres</a>
+      <a href="#parcours">Parcours</a>
+      <a href="#competences">Compétences</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#formation">Formation</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="bar__actions">
+      <button class="btn btn--small" type="button" id="btn-pdf">Télécharger en PDF</button>
+      <button class="bar__menu" type="button" id="btn-menu" aria-expanded="false" aria-controls="nav">
+        <span class="bar__menu-lines" aria-hidden="true"></span>
+        <span class="sr">Menu</span>
+      </button>
     </div>
   </header>
 
-  <main>
-    <!-- HERO SECTION ÉPURÉE (SANS IMAGE) -->
-    <section class="hero-section" id="hero">
-      <div class="container">
-        <div class="hero-full-content">
-          <div class="hero-badge-wrap">
-            <span class="badge badge-status">
-              <i class="fa-solid fa-location-dot" style="color: var(--accent-primary);"></i>
-              <span id="cv-availability">Dakar, Sénégal | Disponible pour opportunités QSE/HSE</span>
-            </span>
-          </div>
+  <main id="contenu">
 
-          <h1 class="hero-title">
-            <span class="gradient-text" id="cv-name">KANDÉ MOUSSA</span>
-          </h1>
+    <!-- Ouverture -->
+    <section class="hero" id="top">
+      <h1 class="hero__name" aria-label="Kandé Moussa">
+        <span class="hero__line" aria-hidden="true">Kandé</span>
+        <span class="hero__line hero__line--indent" aria-hidden="true">Moussa</span>
+      </h1>
 
-          <h2 class="hero-subtitle" id="cv-title">
-            <i class="fa-solid fa-award"></i> Coordinateur QHSE – Systèmes de Management Intégrés
-          </h2>
-
-          <div class="iso-badges-row">
-            <span class="badge badge-iso"><i class="fa-solid fa-shield"></i> ISO 9001 (Qualité)</span>
-            <span class="badge badge-iso"><i class="fa-solid fa-leaf"></i> ISO 14001 (Environnement)</span>
-            <span class="badge badge-iso"><i class="fa-solid fa-user-shield"></i> ISO 45001 (Sécurité)</span>
-            <span class="badge badge-status"><i class="fa-solid fa-certificate"></i> Lead Auditor ISO 9001</span>
-            <span class="badge badge-status"><i class="fa-solid fa-chart-line"></i> Lean Six Sigma Green Belt</span>
-          </div>
-
-          <p class="hero-description" id="cv-summary">
-            Coordinateur QHSE avec une expérience terrain confirmée en environnement industriel (industrie métallurgique - SOMETA SA) et bancaire. Spécialisé dans le pilotage et le déploiement de Systèmes de Management Intégrés (SMI ISO 9001, 14001, 45001), la révision du DUER, les plans de prévention, la gestion des audits internes, la veille réglementaire SST et la réduction de 40% du taux de fréquence des accidents. Certifié ISO 9001 Lead Auditor et Lean Six Sigma Green Belt.
-          </p>
-
-          <div class="hero-cta">
-            <a href="#contact" class="btn btn-primary">
-              <i class="fa-solid fa-paper-plane"></i> Me Contacter
-            </a>
-            <a href="#experience" class="btn btn-secondary">
-              <i class="fa-solid fa-briefcase"></i> Voir mes Expériences
-            </a>
-          </div>
-
-          <div class="hero-socials">
-            <a href="https://linkedin.com/in/moussa-kandé" target="_blank" class="social-link" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
-            <a href="mailto:dekan.moussa2@gmail.com" class="social-link" title="Email"><i class="fa-solid fa-envelope"></i></a>
-            <a href="tel:+221781466626" class="social-link" title="Téléphone"><i class="fa-solid fa-phone"></i></a>
-          </div>
+      <div class="hero__body">
+        <p class="hero__lead" data-reveal>
+          Coordinateur QHSE chez SOMETA SA, une aciérie de Sébikhotane.
+          Je fais tourner un système de management intégré ISO 9001, 14001 et 45001
+          sur un site où l'on coule et lamine de l'acier tous les jours.
+        </p>
+        <div class="hero__cta" data-reveal>
+          <a class="btn" href="#parcours" data-magnetic>Voir le parcours</a>
+          <a class="btn btn--ghost" href="mailto:dekan.moussa2@gmail.com" data-magnetic>Écrire un e-mail</a>
         </div>
+      </div>
+
+      <table class="cartouche" aria-label="Cartouche du document">
+        <tbody>
+          <tr><th scope="row">Document</th><td>Curriculum vitae</td></tr>
+          <tr><th scope="row">Titulaire</th><td>Kandé Moussa</td></tr>
+          <tr><th scope="row">Fonction</th><td>Coordinateur QHSE, SOMETA SA</td></tr>
+          <tr><th scope="row">Révision</th><td><strong>04</strong>, novembre 2026</td></tr>
+          <tr><th scope="row">Référentiels</th><td>ISO 9001, ISO 14001, ISO 45001</td></tr>
+          <tr><th scope="row">Lieu</th><td>Dakar, Sénégal</td></tr>
+          <tr><th scope="row">Statut</th><td><span class="stamp">En vigueur</span></td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="band" aria-label="Domaines et certifications">
+      <div class="band__track">
+        <ul class="band__list">
+          <li>ISO 9001 Lead Auditor</li>
+          <li>Lean Six Sigma Green Belt</li>
+          <li>DUER</li>
+          <li>Plans de prévention</li>
+          <li>POI et PUI</li>
+          <li>Audits internes</li>
+          <li>CHST</li>
+          <li>Veille réglementaire SST</li>
+          <li>Indicateurs TF et TG</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Chiffres -->
+    <section class="figures" id="chiffres">
+      <div class="figures__pin">
+        <div class="figures__main">
+          <p class="figures__kicker">Taux de fréquence des accidents, SOMETA</p>
+          <p class="figures__big" aria-label="moins 40 pour cent">
+            <span class="figures__sign">−</span><span class="figures__num" data-to="40">40</span><span class="figures__pct">%</span>
+          </p>
+          <div class="gauge" aria-hidden="true">
+            <div class="gauge__row"><span class="gauge__label">Avant</span><span class="gauge__track"><span class="gauge__fill gauge__fill--before"></span></span><span class="gauge__val">100</span></div>
+            <div class="gauge__row"><span class="gauge__label">Après</span><span class="gauge__track"><span class="gauge__fill gauge__fill--after"></span></span><span class="gauge__val gauge__val--after">60</span></div>
+          </div>
+          <p class="gauge__note">Base 100 avant le plan, pour lire la baisse.</p>
+        </div>
+        <div class="figures__text">
+          <h2 class="h2" data-split>Moins d'accidents, parce que le terrain est suivi chaque semaine.</h2>
+          <p data-reveal>
+            La baisse vient d'un plan de prévention renforcé et d'inspections HSE hebdomadaires
+            sur le site. Les écarts relevés partent en actions, et les actions sont suivies
+            jusqu'à leur clôture.
+          </p>
+        </div>
+      </div>
+
+      <ul class="facts">
+        <li class="fact" data-reveal>
+          <span class="fact__num">&gt;&nbsp;85&nbsp;%</span>
+          <span class="fact__text">de conformité interne sur le SMI, mesurée en audit.</span>
+        </li>
+        <li class="fact" data-reveal>
+          <span class="fact__num">−30&nbsp;%</span>
+          <span class="fact__text">d'écarts documentaires sur le contrôle qualité des aciers FE500 et B500B.</span>
+        </li>
+        <li class="fact" data-reveal>
+          <span class="fact__num">12</span>
+          <span class="fact__text">indicateurs de performance suivis, avec un reporting mensuel à la direction générale.</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Parcours -->
+    <section class="career" id="parcours">
+      <header class="career__head">
+        <h2 class="h2" data-split>Quatre postes en deux ans et demi, sur le même site.</h2>
+        <p data-reveal>Chez SOMETA, chaque nouvelle fonction a été une révision du poste précédent : plus de périmètre, plus de monde à coordonner.</p>
+      </header>
+
+      <div class="career__stage">
+        <div class="career__visual" aria-hidden="true">
+          <p class="career__rev">Rév. <span class="career__rev-num">01</span></p>
+          <svg class="stairs" viewBox="0 0 400 300" preserveAspectRatio="xMidYMax meet">
+            <rect class="stairs__step" x="0"   y="225" width="96" height="75"/>
+            <rect class="stairs__step" x="101" y="150" width="96" height="150"/>
+            <rect class="stairs__step" x="202" y="75"  width="96" height="225"/>
+            <rect class="stairs__step" x="303" y="0"   width="97" height="300"/>
+          </svg>
+        </div>
+
+        <ol class="revs">
+          <li class="rev is-active" data-rev="01">
+            <p class="rev__meta"><span class="rev__num">Rév. 01</span><span class="rev__date">Juin à août 2024</span></p>
+            <h3 class="rev__title">Agent, animateur HSE</h3>
+            <p class="rev__why">Premier poste sur le site : faire respecter les consignes, créer le DUER, animer les premiers Toolbox meetings avec la production.</p>
+          </li>
+          <li class="rev" data-rev="02">
+            <p class="rev__meta"><span class="rev__num">Rév. 02</span><span class="rev__date">Août 2024 à septembre 2025</span></p>
+            <h3 class="rev__title">Superviseur HSE</h3>
+            <p class="rev__why">Supervision des activités HSE, plans de prévention pour les entreprises extérieures, enquêtes accidents, exercices d'évacuation.</p>
+          </li>
+          <li class="rev" data-rev="03">
+            <p class="rev__meta"><span class="rev__num">Rév. 03</span><span class="rev__date">À partir de septembre 2025</span></p>
+            <h3 class="rev__title">Assistant QHSE</h3>
+            <p class="rev__why">La qualité entre dans le périmètre : 12 indicateurs, contrôle des aciers FE500 et B500B, audits internes et actions correctives.</p>
+          </li>
+          <li class="rev" data-rev="04">
+            <p class="rev__meta"><span class="rev__num">Rév. 04</span><span class="rev__date">Poste actuel</span></p>
+            <h3 class="rev__title">Coordinateur QHSE</h3>
+            <p class="rev__why">Pilotage du SMI complet, coordination des équipes HSE, animation du CHST et reporting à la direction générale.</p>
+          </li>
+        </ol>
+      </div>
+
+      <div class="missions">
+        <h3 class="h3">Le détail, poste par poste</h3>
+
+        <details class="mission" open>
+          <summary>
+            <span class="mission__title">Coordinateur QHSE</span>
+            <span class="mission__where">SOMETA SA, Sébikhotane</span><span class="mission__when">Poste actuel</span>
+          </summary>
+          <div class="mission__body">
+            <ul>
+              <li>Pilotage du SMI ISO 9001, 14001 et 45001 : planification annuelle, revue de direction, suivi des objectifs QHSE.</li>
+              <li>Coordination des équipes HSE du site, répartition des missions et appui technique aux agents de terrain.</li>
+              <li>Révision du DUER après chaque changement de procédé, hiérarchisation des risques et validation des plans d'actions.</li>
+              <li>Plans de prévention pour les entreprises extérieures et les travaux à risques.</li>
+              <li>Veille réglementaire SST et environnementale, avec intégration des nouvelles obligations du Code du travail sénégalais dans les procédures.</li>
+              <li>Suivi des TF, TG, AT et presque-accidents, reporting mensuel à la direction générale.</li>
+              <li>Programme annuel d'audits internes, de la planification à la clôture des non-conformités.</li>
+              <li>Plan d'urgence POI et PUI : exercices incendie et évacuation, retours d'expérience, mises à jour.</li>
+              <li>Animation du CHST : ordres du jour, suivi des résolutions, plans d'actions trimestriels.</li>
+              <li>Mise en place d'une gestion documentaire QSE unique pour tout le site.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="mission">
+          <summary>
+            <span class="mission__title">Assistant QHSE</span>
+            <span class="mission__where">SOMETA SA</span><span class="mission__when">À partir de septembre 2025</span>
+          </summary>
+          <div class="mission__body">
+            <ul>
+              <li>Maintien du SMI et suivi de 12 indicateurs de performance, conformité interne portée au-delà de 85 %.</li>
+              <li>Mise à jour du DUER et des plans de prévention pour tous les postes de travail.</li>
+              <li>Tableaux de bord SST mensuels pour la direction.</li>
+              <li>Audits internes, traitement des non-conformités et suivi des actions correctives.</li>
+              <li>Contrôle qualité des produits finis (aciers FE500 et B500B), écarts documentaires réduits de 30 %.</li>
+              <li>Toolbox meetings et coordination des formations SST.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="mission">
+          <summary>
+            <span class="mission__title">Superviseur HSE</span>
+            <span class="mission__where">SOMETA SA</span><span class="mission__when">Août 2024 à septembre 2025</span>
+          </summary>
+          <div class="mission__body">
+            <ul>
+              <li>Supervision des activités HSE et suivi de la conformité au Code du travail sénégalais et à l'ISO 45001.</li>
+              <li>Rédaction et mise à jour des procédures du système QSE.</li>
+              <li>Révision du DUER : dangers, risques SST et environnementaux, mesures de prévention.</li>
+              <li>Plans de prévention pour les interventions d'entreprises extérieures.</li>
+              <li>Mise à jour du POI, exercices d'évacuation avec les équipes de secours.</li>
+              <li>Inspections HSE, enquêtes accidents et incidents, rapports avec plans d'actions.</li>
+              <li>Participation à la réorganisation du CHST.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="mission">
+          <summary>
+            <span class="mission__title">Agent, animateur HSE</span>
+            <span class="mission__where">SOMETA SA</span><span class="mission__when">Juin à août 2024</span>
+          </summary>
+          <div class="mission__body">
+            <ul>
+              <li>Contrôle du respect des consignes de sécurité sur le site.</li>
+              <li>Création du DUER et participation à l'évaluation des risques professionnels.</li>
+              <li>Séances de sensibilisation et Toolbox meetings avec le personnel de production.</li>
+            </ul>
+          </div>
+        </details>
+
+        <h3 class="h3 missions__sub">Stages</h3>
+
+        <details class="mission">
+          <summary>
+            <span class="mission__title">Stagiaire qualité, communication et culture client</span>
+            <span class="mission__where">CBAO, groupe Attijariwafa Bank, Dakar</span><span class="mission__when">Octobre à décembre 2024</span>
+          </summary>
+          <div class="mission__body">
+            <p class="mission__note">Stage académique de l'ISM.</p>
+            <ul>
+              <li>Enquêtes qualité internes dans 4 départements, écarts relevés et plans d'actions proposés.</li>
+              <li>Cartographie des processus et des parties prenantes.</li>
+              <li>Analyse des non-conformités et mise en forme des rapports qualité mensuels.</li>
+              <li>Actions d'amélioration assorties d'indicateurs de suivi.</li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="mission">
+          <summary>
+            <span class="mission__title">Stagiaire marketing et organisation</span>
+            <span class="mission__where">Agri Business Innov Guinée (ABIG)</span><span class="mission__when">Août et septembre 2022</span>
+          </summary>
+          <div class="mission__body">
+            <ul>
+              <li>Participation au plan marketing digital des produits.</li>
+              <li>Organisation et comptes rendus des réunions avec les partenaires.</li>
+            </ul>
+          </div>
+        </details>
       </div>
     </section>
 
-    <!-- PROFIL & IMPACT -->
-    <section class="section" id="about">
-      <div class="container">
-        <div class="text-center" style="text-align: center;">
-          <span class="section-tag"><i class="fa-solid fa-shield-halved"></i> Profil Professionnel</span>
-          <h2 class="section-title">Rigueur, Conformité & <span class="gradient-text">Culture Sécurité</span></h2>
-          <p class="section-subtitle" style="margin: 0 auto 2.5rem;">
-            Expérience éprouvée dans la métallurgie sidérurgique (SOMETA SA) et le secteur bancaire (CBAO Attijariwafa Bank).
-          </p>
+    <!-- Compétences -->
+    <section class="skills" id="competences">
+      <header class="skills__head">
+        <h2 class="h2" data-split>Mes compétences, rangées dans la roue de Deming.</h2>
+        <p data-reveal>Choisissez une étape du cycle pour voir ce que j'y fais concrètement.</p>
+      </header>
+
+      <div class="skills__grid">
+        <div class="wheel" aria-hidden="true">
+          <svg viewBox="0 0 400 400" class="wheel__svg">
+            <g class="wheel__rot">
+              <path class="wheel__arc" data-step="0" d="M200 20 A180 180 0 0 1 380 200 L300 200 A100 100 0 0 0 200 100 Z"/>
+              <path class="wheel__arc" data-step="1" d="M380 200 A180 180 0 0 1 200 380 L200 300 A100 100 0 0 0 300 200 Z"/>
+              <path class="wheel__arc" data-step="2" d="M200 380 A180 180 0 0 1 20 200 L100 200 A100 100 0 0 0 200 300 Z"/>
+              <path class="wheel__arc" data-step="3" d="M20 200 A180 180 0 0 1 200 20 L200 100 A100 100 0 0 0 100 200 Z"/>
+              <text class="wheel__letter" x="268" y="148">P</text>
+              <text class="wheel__letter" x="268" y="282">D</text>
+              <text class="wheel__letter" x="132" y="282">C</text>
+              <text class="wheel__letter" x="132" y="148">A</text>
+            </g>
+            <circle class="wheel__ring" cx="200" cy="200" r="190"/>
+          </svg>
+          <p class="wheel__center"><span class="wheel__center-step">Planifier</span></p>
         </div>
 
-        <div class="stats-grid">
-          <div class="stat-card">
-            <div class="stat-number gradient-text">+85%</div>
-            <div class="stat-label">Conformité Interne SMI Portée</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number gradient-text">12</div>
-            <div class="stat-label">Indicateurs de Performance Suivis</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number gradient-text">+30%</div>
-            <div class="stat-label">Réduction Écarts Documentaires</div>
-          </div>
-          <div class="stat-card">
-            <div class="stat-number gradient-text">SMI</div>
-            <div class="stat-label">ISO 9001 / 14001 / 45001</div>
-          </div>
-        </div>
-
-        <div class="about-content">
-          <div class="about-text">
-            <h3>Une Vision Intégrée du Management de la Qualité & Sécurité</h3>
-            <p id="cv-bio-long">
-              Professionnel passionné et rigoureux, spécialisé dans l'élaboration et la révision des Document Unique d'Évaluation des Risques (DUER), la rédaction de plans de prévention et de plans d'urgence (POI/PUI), l'animation de Toolbox meetings HSE, et le contrôle qualité des produits finis (aciers FE500/B500B).
-            </p>
-            <p>
-              Grâce à des compétences en leadership et en résolution de problèmes (PDCA), j'assure un suivi rigoureux des indicateurs SST (taux de fréquence, taux de gravité, accidents du travail) pour garantir un environnement de travail conforme, sûr et durable.
-            </p>
+        <div class="skills__panel">
+          <div class="tabs" role="tablist" aria-label="Étapes du cycle PDCA">
+            <button role="tab" id="tab-0" aria-controls="panel-0" aria-selected="true">Planifier</button>
+            <button role="tab" id="tab-1" aria-controls="panel-1" aria-selected="false" tabindex="-1">Réaliser</button>
+            <button role="tab" id="tab-2" aria-controls="panel-2" aria-selected="false" tabindex="-1">Vérifier</button>
+            <button role="tab" id="tab-3" aria-controls="panel-3" aria-selected="false" tabindex="-1">Agir</button>
           </div>
 
-          <div class="qhse-pillars-grid">
-            <div class="pillar-card">
-              <div class="pillar-icon"><i class="fa-solid fa-diagram-project"></i></div>
-              <h4 class="pillar-title">SMI & Normes ISO</h4>
-              <p class="pillar-desc">Déploiement et maintien des normes ISO 9001, 14001 et 45001.</p>
-            </div>
-
-            <div class="pillar-card">
-              <div class="pillar-icon"><i class="fa-solid fa-triangle-exclamation"></i></div>
-              <h4 class="pillar-title">DUER & Risques SST</h4>
-              <p class="pillar-desc">Évaluation des dangers, fiches de postes et plans de prévention.</p>
-            </div>
-
-            <div class="pillar-card">
-              <div class="pillar-icon"><i class="fa-solid fa-clipboard-check"></i></div>
-              <h4 class="pillar-title">Audits & Non-conformités</h4>
-              <p class="pillar-desc">Audits internes, traitement des écarts et actions correctives.</p>
-            </div>
-
-            <div class="pillar-card">
-              <div class="pillar-icon"><i class="fa-solid fa-chart-line"></i></div>
-              <h4 class="pillar-title">Indicateurs SST & KPI</h4>
-              <p class="pillar-desc">Suivi du taux de fréquence (TF), taux de gravité (TG) et tableaux de bord.</p>
-            </div>
+          <div class="tabpanel" role="tabpanel" id="panel-0" data-label="Planifier" aria-labelledby="tab-0">
+            <ul>
+              <li>Veille réglementaire SST et environnementale, Code du travail sénégalais</li>
+              <li>DUER et évaluation des risques professionnels</li>
+              <li>Plans de prévention pour les entreprises extérieures</li>
+              <li>Planification annuelle du SMI et préparation de la revue de direction</li>
+            </ul>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- COMPÉTENCES CLÉS -->
-    <section class="section" id="skills">
-      <div class="container">
-        <div class="text-center" style="text-align: center;">
-          <span class="section-tag"><i class="fa-solid fa-sliders"></i> Savoir-Faire Métier</span>
-          <h2 class="section-title">Compétences <span class="gradient-text">Clés</span></h2>
-          <p class="section-subtitle" style="margin: 0 auto 2.5rem;">
-            Domaines de maîtrise technique, réglementaire et opérationnelle.
-          </p>
-        </div>
-
-        <div class="skills-filter">
-          <button class="filter-btn active" data-filter="all">Tous</button>
-          <button class="filter-btn" data-filter="qhse">QHSE / HSE</button>
-          <button class="filter-btn" data-filter="reglementation">Prévention & Réglementation</button>
-          <button class="filter-btn" data-filter="gestion">Gestion & Outils</button>
-        </div>
-
-        <div class="skills-grid" id="skills-container">
-          <!-- QHSE -->
-          <div class="skill-card" data-category="qhse">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-shield-halved skill-icon"></i>
-                <span class="skill-name">SMI (ISO 9001, 14001, 45001)</span>
-              </div>
-              <span class="skill-percentage">95%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="95%"></div></div>
+          <div class="tabpanel" role="tabpanel" id="panel-1" data-label="Réaliser" aria-labelledby="tab-1" hidden>
+            <ul>
+              <li>Déploiement et maintien du SMI ISO 9001, 14001 et 45001</li>
+              <li>Gestion documentaire QSE</li>
+              <li>Toolbox meetings, accueil sécurité des nouveaux arrivants, formations au poste</li>
+              <li>Plans d'urgence POI et PUI, exercices incendie et évacuation</li>
+            </ul>
           </div>
-
-          <div class="skill-card" data-category="qhse">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-file-contract skill-icon"></i>
-                <span class="skill-name">DUER / Évaluation des Risques SST</span>
-              </div>
-              <span class="skill-percentage">98%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="98%"></div></div>
+          <div class="tabpanel" role="tabpanel" id="panel-2" data-label="Vérifier" aria-labelledby="tab-2" hidden>
+            <ul>
+              <li>Audits internes, en tant qu'ISO 9001 Lead Auditor</li>
+              <li>Inspections HSE hebdomadaires</li>
+              <li>Indicateurs TF, TG, AT et presque-accidents</li>
+              <li>Contrôle qualité des aciers FE500 et B500B</li>
+              <li>Enquêtes accidents et incidents</li>
+            </ul>
           </div>
-
-          <div class="skill-card" data-category="qhse">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-clipboard-list skill-icon"></i>
-                <span class="skill-name">Plans de Prévention & Consignes</span>
-              </div>
-              <span class="skill-percentage">95%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="95%"></div></div>
-          </div>
-
-          <div class="skill-card" data-category="qhse">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-magnifying-glass-chart skill-icon"></i>
-                <span class="skill-name">Audits Internes & Non-Conformités</span>
-              </div>
-              <span class="skill-percentage">94%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="94%"></div></div>
-          </div>
-
-          <!-- Prévention & Réglementation -->
-          <div class="skill-card" data-category="reglementation">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-scale-balanced skill-icon"></i>
-                <span class="skill-name">Veille Réglementaire & Conformité</span>
-              </div>
-              <span class="skill-percentage">90%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="90%"></div></div>
-          </div>
-
-          <div class="skill-card" data-category="reglementation">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-folder-open skill-icon"></i>
-                <span class="skill-name">Gestion Documentaire QSE</span>
-              </div>
-              <span class="skill-percentage">92%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="92%"></div></div>
-          </div>
-
-          <div class="skill-card" data-category="reglementation">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-truck-medical skill-icon"></i>
-                <span class="skill-name">Plans d'Urgence (POI / PUI)</span>
-              </div>
-              <span class="skill-percentage">88%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="88%"></div></div>
-          </div>
-
-          <div class="skill-card" data-category="reglementation">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-comments skill-icon"></i>
-                <span class="skill-name">Sensibilisation & Toolbox Meetings</span>
-              </div>
-              <span class="skill-percentage">96%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="96%"></div></div>
-          </div>
-
-          <!-- Gestion & Outils -->
-          <div class="skill-card" data-category="gestion">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-chart-line skill-icon"></i>
-                <span class="skill-name">Indicateurs SST (TF, TG, AT) & KPI</span>
-              </div>
-              <span class="skill-percentage">95%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="95%"></div></div>
-          </div>
-
-          <div class="skill-card" data-category="gestion">
-            <div class="skill-header">
-              <div class="skill-title-wrap">
-                <i class="fa-solid fa-arrows-spin skill-icon"></i>
-                <span class="skill-name">Amélioration Continue (PDCA / Six Sigma)</span>
-              </div>
-              <span class="skill-percentage">92%</span>
-            </div>
-            <div class="skill-bar-bg"><div class="skill-bar-fill" data-progress="92%"></div></div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section class="section" id="certifications">
-      <div class="container">
-        <div class="text-center" style="text-align: center;">
-          <span class="section-tag"><i class="fa-solid fa-award"></i> Qualifications & Titres</span>
-          <h2 class="section-title">Certifications <span class="gradient-text">Professionnelles</span></h2>
-          <p class="section-subtitle" style="margin: 0 auto 2.5rem;">
-            Titres certifiés et formations spécialisées obtenues.
-          </p>
-        </div>
-
-        <div class="iso-standards-grid">
-          <div class="iso-card">
-            <div class="iso-number"><i class="fa-solid fa-certificate"></i></div>
-            <h3 class="iso-title">ISO 9001 Lead Auditor</h3>
-            <p style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">Août 2024</p>
-            <p class="iso-desc">Certification d'auditeur leader certifié pour la réalisation d'audits internes et externes des systèmes de management de la qualité.</p>
-          </div>
-
-          <div class="iso-card">
-            <div class="iso-number"><i class="fa-solid fa-chart-pie"></i></div>
-            <h3 class="iso-title">Lean Six Sigma Green Belt</h3>
-            <p style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">2024</p>
-            <p class="iso-desc">Maîtrise de la démarche DMAIC, élimination des gaspillages et réduction de la variabilité des processus.</p>
-          </div>
-
-          <div class="iso-card">
-            <div class="iso-number"><i class="fa-solid fa-user-shield"></i></div>
-            <h3 class="iso-title">Formation HSE Manager</h3>
-            <p style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">Janvier 2025</p>
-            <p class="iso-desc">Pilotage stratégique de la santé, de la sécurité et de l'environnement en milieu industriel.</p>
-          </div>
-
-          <div class="iso-card">
-            <div class="iso-number"><i class="fa-solid fa-leaf"></i></div>
-            <h3 class="iso-title">Évaluation Environnementale & Sociale</h3>
-            <p style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">Novembre 2024</p>
-            <p class="iso-desc">Étude de faisabilité et analyse des impacts environnementaux et sociaux des projets.</p>
-          </div>
-
-          <div class="iso-card">
-            <div class="iso-number"><i class="fa-solid fa-kit-medical"></i></div>
-            <h3 class="iso-title">Secours Civiques (PSC1) & Incendie</h3>
-            <p style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">Août 2024 / Juin 2024</p>
-            <p class="iso-desc">Premiers gestes de secours, équipier de première intervention et extinction incendie.</p>
-          </div>
-
-          <div class="iso-card">
-            <div class="iso-number"><i class="fa-solid fa-cheese"></i></div>
-            <h3 class="iso-title">Formation Agroalimentaire</h3>
-            <p style="color: var(--accent-primary); font-weight: 700; margin-bottom: 0.5rem;">Novembre 2023</p>
-            <p class="iso-desc">Spécialisation en contrôle qualité et procédés de transformation des produits laitiers.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- EXPÉRIENCES PROFESSIONNELLES -->
-    <section class="section" id="experience">
-      <div class="container">
-        <div class="text-center" style="text-align: center;">
-          <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Expériences Terrain</span>
-          <h2 class="section-title">Parcours <span class="gradient-text">Professionnel</span></h2>
-          <p class="section-subtitle" style="margin: 0 auto 2.5rem;">
-            Postes occupés et réalisations concrètes dans l'industrie et le secteur bancaire.
-          </p>
-        </div>
-
-        <div class="timeline">
-          <!-- Exp 1: Coordinateur QHSE -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Coordinateur QHSE</h3>
-                  <span class="company-name"><i class="fa-solid fa-industry"></i> Société Métallurgique d'Afrique (SOMETA SA) – Sébikhotane, Sénégal</span>
-                  <p style="font-size: 0.9rem; color: var(--text-muted);">Industrie sidérurgique</p>
-                </div>
-                <span class="timeline-date">Présent</span>
-              </div>
-              <div class="timeline-desc">
-                <ul>
-                  <li>Pilotage du Système de Management Intégré (SMI) couvrant les référentiels ISO 9001, ISO 14001 et ISO 45001 : planification annuelle, revue de direction et suivi des objectifs QHSE.</li>
-                  <li>Supervision de l'ensemble des activités QHSE sur site industriel : coordination des équipes HSE, répartition des missions et accompagnement technique des agents de terrain.</li>
-                  <li>Pilotage et révision du DUER (Document Unique d'Évaluation des Risques Professionnels) : mise à jour après tout changement de processus, hiérarchisation des risques et validation des plans d'actions.</li>
-                  <li>Élaboration, mise en œuvre et suivi des plans de prévention pour les interventions d'entreprises extérieures et les travaux à risques sur site.</li>
-                  <li>Pilotage de la veille réglementaire SST et environnementale : intégration des nouvelles obligations légales (Code du travail sénégalais, ISO 45001) dans les procédures internes.</li>
-                  <li>Suivi et analyse des indicateurs SST (taux de fréquence, taux de gravité, taux d'absentéisme AT, nombre de presque-accidents) ; reporting mensuel à la direction générale.</li>
-                  <li>Coordination du programme d'audits internes annuels : planification, conduite, rédaction des rapports et clôture des non-conformités dans les délais impartis.</li>
-                  <li>Pilotage du plan d'urgence interne (POI/PUI) : organisation des exercices de simulation incendie et évacuation, retours d'expérience et mise à jour du plan.</li>
-                  <li>Coordination des actions de sensibilisation et de formation SST : Toolbox meetings hebdomadaires, accueil sécurité des nouveaux arrivants, formations au poste.</li>
-                  <li>Animation du Comité d'Hygiène, Santé et Travail (CHST) : préparation des ordres du jour, suivi des résolutions et élaboration des plans d'actions trimestriels.</li>
-                  <li>Réduction de 40 % du taux de fréquence des accidents grâce au déploiement d'un plan de prévention renforcé et à la mise en place d'inspections HSE hebdomadaires.</li>
-                  <li>Déploiement d'un système de gestion documentaire QSE unifié garantissant la traçabilité et la conformité des activités industrielles.</li>
-                </ul>
-              </div>
-              <div class="timeline-tags">
-                <span class="badge badge-iso">ISO 9001/14001/45001</span>
-                <span class="badge badge-skill">Pilotage SMI & DUER</span>
-                <span class="badge badge-skill">Accidents -40%</span>
-                <span class="badge badge-skill">CHST & Audits</span>
-                <span class="badge badge-skill">POI/PUI</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exp 2: Assistant QHSE -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Assistant QHSE</h3>
-                  <span class="company-name"><i class="fa-solid fa-industry"></i> Société Métallurgique d'Afrique (SOMETA SA) – Sébikhotane, Sénégal</span>
-                  <p style="font-size: 0.9rem; color: var(--text-muted);">Industrie sidérurgique</p>
-                </div>
-                <span class="timeline-date">Septembre 2025 – [Promotion Coordinateur]</span>
-              </div>
-              <div class="timeline-desc">
-                <ul>
-                  <li>Maintien et amélioration du SMI (ISO 9001, 14001, 45001) : suivi de 12 indicateurs de performance, taux de conformité interne porté à +85 %.</li>
-                  <li>Mise à jour du DUER et actualisation des plans de prévention pour l'ensemble des postes de travail.</li>
-                  <li>Pilotage de la veille réglementaire SST et environnementale : intégration des nouvelles exigences légales dans les procédures internes.</li>
-                  <li>Suivi des indicateurs SST mensuels (taux de fréquence, taux de gravité, nombre d'accidents de travail) et élaboration de tableaux de bord pour la direction.</li>
-                  <li>Organisation et suivi des audits internes, traitement des non-conformités et mise en œuvre des actions correctives.</li>
-                  <li>Contrôle qualité des produits finis (aciers FE500/B500B) ; réduction de +30 % des écarts documentaires.</li>
-                  <li>Sensibilisation du personnel aux risques du site, animation de Toolbox meetings HSE et coordination des formations SST.</li>
-                </ul>
-              </div>
-              <div class="timeline-tags">
-                <span class="badge badge-iso">ISO 9001/14001/45001</span>
-                <span class="badge badge-skill">DUER</span>
-                <span class="badge badge-skill">Indicateurs SST</span>
-                <span class="badge badge-skill">Aciers FE500/B500B</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exp 3: Superviseur HSE -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Superviseur HSE</h3>
-                  <span class="company-name"><i class="fa-solid fa-industry"></i> Société Métallurgique d'Afrique (SOMETA SA) – Sébikhotane, Sénégal</span>
-                  <p style="font-size: 0.9rem; color: var(--text-muted);">Industrie sidérurgique</p>
-                </div>
-                <span class="timeline-date">Août 2024 – Septembre 2025</span>
-              </div>
-              <div class="timeline-desc">
-                <ul>
-                  <li>Supervision des activités HSE sur site industriel et suivi de la conformité aux exigences réglementaires (Code du travail sénégalais, ISO 45001).</li>
-                  <li>Contribution au déploiement du SMI (ISO 9001, 14001, 45001) : rédaction et mise à jour des procédures et documents du système QSE.</li>
-                  <li>Élaboration et révision du DUER : identification des dangers, évaluation des risques SST et environnementaux, proposition de mesures préventives et correctives.</li>
-                  <li>Rédaction et suivi des plans de prévention pour les interventions d'entreprises extérieures sur site.</li>
-                  <li>Mise à jour et suivi du plan d'urgence interne (POI) : exercices d'évacuation et coordination avec les équipes de secours.</li>
-                  <li>Réalisation d'inspections HSE régulières ; enquête accidents/incidents et rédaction de rapports avec plans d'actions.</li>
-                  <li>Animation de Toolbox meetings sécurité ; contribution à la réorganisation du CHST.</li>
-                </ul>
-              </div>
-              <div class="timeline-tags">
-                <span class="badge badge-skill">Supervision Site</span>
-                <span class="badge badge-skill">POI / Urgence</span>
-                <span class="badge badge-skill">CHST</span>
-                <span class="badge badge-skill">Enquête Accidents</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exp 4: Stagiaire — Assistant Qualité, Communication & Culture Client -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Stagiaire — Assistant Qualité, Communication & Culture Client</h3>
-                  <span class="company-name"><i class="fa-solid fa-building-columns"></i> CBAO – Groupe Attijariwafa Bank – Dakar, Sénégal</span>
-                  <p style="font-size: 0.9rem; color: var(--text-muted);">Secteur bancaire (Stage académique – ISM)</p>
-                </div>
-                <span class="timeline-date">Octobre 2024 – Décembre 2024</span>
-              </div>
-              <div class="timeline-desc">
-                <ul>
-                  <li>Conduite d'enquêtes qualité internes auprès de 4 départements : identification d'écarts majeurs et proposition de plans d'actions correctives.</li>
-                  <li>Élaboration de cartographies de processus et identification des parties prenantes clés.</li>
-                  <li>Analyse des non-conformités ; rédaction de rapports et mise en conformité des rapports qualité mensuels.</li>
-                  <li>Proposition d'actions d'amélioration continue assorties d'indicateurs de performance (KPI).</li>
-                </ul>
-              </div>
-              <div class="timeline-tags">
-                <span class="badge badge-skill">Qualité Bancaire</span>
-                <span class="badge badge-skill">Cartographie Processus</span>
-                <span class="badge badge-skill">KPI Qualité</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exp 5: Agent / Animateur HSE -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Agent / Animateur HSE</h3>
-                  <span class="company-name"><i class="fa-solid fa-helmet-safety"></i> Société Métallurgique d'Afrique (SOMETA SA) – Sébikhotane, Sénégal</span>
-                  <p style="font-size: 0.9rem; color: var(--text-muted);">Industrie sidérurgique</p>
-                </div>
-                <span class="timeline-date">Juin 2024 – Août 2024</span>
-              </div>
-              <div class="timeline-desc">
-                <ul>
-                  <li>Application et contrôle du respect des consignes de sécurité sur l'ensemble du site.</li>
-                  <li>Création et mise à jour du DUER (Document Unique d'Évaluation des Risques Professionnels).</li>
-                  <li>Participation à l'analyse et l'évaluation des risques professionnels, identification des mesures de prévention adaptées.</li>
-                  <li>Animation des séances de sensibilisation sécurité et Toolbox meetings HSE auprès du personnel de production.</li>
-                </ul>
-              </div>
-              <div class="timeline-tags">
-                <span class="badge badge-skill">Animation HSE</span>
-                <span class="badge badge-skill">Sensibilisation</span>
-                <span class="badge badge-skill">Contrôle Terrain</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Exp 6: Stagiaire – Appui Marketing & Organisation -->
-          <div class="timeline-item">
-            <div class="timeline-dot"></div>
-            <div class="timeline-content">
-              <div class="timeline-header">
-                <div>
-                  <h3 class="role-title">Stagiaire – Appui Marketing & Organisation</h3>
-                  <span class="company-name"><i class="fa-solid fa-wheat-awn"></i> Agri Business Innov Guinée (ABIG) – Guinée</span>
-                </div>
-                <span class="timeline-date">Août – Septembre 2022</span>
-              </div>
-              <div class="timeline-desc">
-                <ul>
-                  <li>Contribution à l'élaboration d'un plan marketing digital pour la promotion des produits.</li>
-                  <li>Organisation et rédaction de comptes rendus de réunions de partenariats.</li>
-                </ul>
-              </div>
-              <div class="timeline-tags">
-                <span class="badge badge-skill">Organisation</span>
-                <span class="badge badge-skill">Partenariats</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- FORMATION & PROJETS -->
-    <section class="section" id="education">
-      <div class="container">
-        <div class="text-center" style="text-align: center;">
-          <span class="section-tag"><i class="fa-solid fa-graduation-cap"></i> Parcours Académique</span>
-          <h2 class="section-title">Diplômes & <span class="gradient-text">Projets Académiques</span></h2>
-          <p class="section-subtitle" style="margin: 0 auto 2.5rem;">
-            Formation initiale de haut niveau au Groupe ISM Dakar et engagements associatifs.
-          </p>
-        </div>
-
-        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 2.5rem;">
-          <div class="stat-card" style="text-align: left;">
-            <span class="badge badge-iso">2022 – 2024</span>
-            <h3 style="font-size: 1.35rem; margin: 0.8rem 0 0.4rem;">MBA Qualité, Hygiène, Sécurité, Environnement (QHSE)</h3>
-            <p style="color: var(--accent-primary); font-weight: 700;">ISM – Dakar, Sénégal</p>
-            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.5rem;">Spécialisation en Systèmes de Management Intégrés, audit qualité, prévention des risques industriels et normes ISO.</p>
-          </div>
-
-          <div class="stat-card" style="text-align: left;">
-            <span class="badge badge-iso">2019 – 2022</span>
-            <h3 style="font-size: 1.35rem; margin: 0.8rem 0 0.4rem;">Licence en Management des Organisations Agricoles et Agroalimentaires</h3>
-            <p style="color: var(--accent-primary); font-weight: 700;">ISM – Dakar, Sénégal</p>
-            <p style="font-size: 0.95rem; color: var(--text-secondary); margin-top: 0.5rem;">Gestion organisationnelle, contrôle qualité agroalimentaire, coordination des filières et management des projets.</p>
-          </div>
-        </div>
-
-        <!-- Projet Académique & Engagements -->
-        <div style="background: var(--glass-bg); border: 1px solid var(--glass-border); border-radius: var(--radius-lg); padding: 2rem; backdrop-filter: var(--backdrop-blur);">
-          <h3 style="font-size: 1.5rem; margin-bottom: 1.2rem;" class="gradient-text"><i class="fa-solid fa-lightbulb"></i> Projet Académique & Engagements Associatifs</h3>
-          
-          <div style="margin-bottom: 1.2rem;">
-            <h4 style="font-size: 1.2rem; color: var(--text-primary);"><i class="fa-solid fa-apple-whole" style="color: var(--accent-primary);"></i> Projet SMOOFRUIT – Création & Pilotage (2020 – 2022) | ISM</h4>
-            <p style="font-size: 1rem; color: var(--text-secondary); margin-top: 0.3rem;">
-              Création et pilotage d'un projet agroalimentaire universitaire : gestion organisationnelle, coordination des activités et application concrète des principes de management de la qualité.
-            </p>
-          </div>
-
-          <hr style="border: 0; border-top: 1px solid var(--border-color); margin: 1.2rem 0;">
-
-          <div>
-            <h4 style="font-size: 1.2rem; color: var(--text-primary); margin-bottom: 0.8rem;"><i class="fa-solid fa-users" style="color: var(--accent-primary);"></i> Responsabilités Associatives</h4>
-            <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.5rem; color: var(--text-secondary); font-size: 1rem;">
-              <li><i class="fa-solid fa-check" style="color: var(--accent-primary);"></i> <strong>Secrétaire Général</strong> – GIE RIQ (Réseau International des Qualiticiens) | Nov 2024 – Mars 2025</li>
-              <li><i class="fa-solid fa-check" style="color: var(--accent-primary);"></i> <strong>Secrétaire Général</strong> – Club QHSE ISM | Mars 2024</li>
-              <li><i class="fa-solid fa-check" style="color: var(--accent-primary);"></i> <strong>Responsable des Relations Extérieures</strong> – Amicale des Guinéens de l'ISM | 2020 – 2021</li>
+          <div class="tabpanel" role="tabpanel" id="panel-3" data-label="Agir" aria-labelledby="tab-3" hidden>
+            <ul>
+              <li>Traitement des non-conformités et actions correctives</li>
+              <li>Animation du CHST et suivi des résolutions</li>
+              <li>Lean Six Sigma (DMAIC) et PDCA pour les problèmes récurrents</li>
+              <li>Reporting mensuel à la direction générale</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="section" id="contact">
-      <div class="container">
-        <div class="text-center" style="text-align: center;">
-          <span class="section-tag"><i class="fa-solid fa-envelope"></i> Prise de Contact</span>
-          <h2 class="section-title">Me <span class="gradient-text">Contacter</span></h2>
-          <p class="section-subtitle" style="margin: 0 auto 2.5rem;">
-            Disponible pour des opportunités professionnelles QSE/HSE et des projets de mise en conformité ISO.
-          </p>
+    <!-- Certifications -->
+    <section class="certs" id="certifications">
+      <h2 class="h2" data-split>Certifications et formations</h2>
+      <ol class="certs__list">
+        <li class="cert">
+          <span class="cert__date">Janv. 2025</span>
+          <span class="cert__name">Formation HSE Manager</span>
+          <span class="cert__desc">Pilotage de la santé, de la sécurité et de l'environnement en milieu industriel.</span>
+        </li>
+        <li class="cert">
+          <span class="cert__date">Nov. 2024</span>
+          <span class="cert__name">Évaluation environnementale et sociale</span>
+          <span class="cert__desc">Analyse des impacts environnementaux et sociaux d'un projet.</span>
+        </li>
+        <li class="cert cert--key">
+          <span class="cert__date">Août 2024</span>
+          <span class="cert__name">ISO 9001 Lead Auditor</span>
+          <span class="cert__desc">Conduite d'audits internes et externes de systèmes de management de la qualité.</span>
+        </li>
+        <li class="cert">
+          <span class="cert__date">Août 2024</span>
+          <span class="cert__name">Prévention et secours civiques (PSC1)</span>
+          <span class="cert__desc">Gestes de premiers secours.</span>
+        </li>
+        <li class="cert">
+          <span class="cert__date">Juin 2024</span>
+          <span class="cert__name">Équipier de première intervention incendie</span>
+          <span class="cert__desc">Extinction d'un départ de feu et conduite à tenir.</span>
+        </li>
+        <li class="cert cert--key">
+          <span class="cert__date">2024</span>
+          <span class="cert__name">Lean Six Sigma Green Belt</span>
+          <span class="cert__desc">Démarche DMAIC, réduction des gaspillages et de la variabilité.</span>
+        </li>
+        <li class="cert">
+          <span class="cert__date">Nov. 2023</span>
+          <span class="cert__name">Formation agroalimentaire</span>
+          <span class="cert__desc">Contrôle qualité et transformation des produits laitiers.</span>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Formation -->
+    <section class="edu" id="formation">
+      <h2 class="h2" data-split>Formation</h2>
+      <div class="edu__grid">
+        <article class="degree" data-reveal>
+          <p class="degree__years">2022 à 2024</p>
+          <h3 class="degree__name">MBA QHSE</h3>
+          <p class="degree__school">Institut Supérieur de Management (ISM), Dakar</p>
+          <p>Systèmes de management intégrés, audit qualité, prévention des risques industriels.</p>
+        </article>
+        <article class="degree" data-reveal>
+          <p class="degree__years">2019 à 2022</p>
+          <h3 class="degree__name">Licence en management des organisations agricoles et agroalimentaires</h3>
+          <p class="degree__school">Institut Supérieur de Management (ISM), Dakar</p>
+          <p>Gestion des organisations, contrôle qualité agroalimentaire, gestion de projet.</p>
+        </article>
+      </div>
+
+      <div class="edu__more">
+        <div data-reveal>
+          <h3 class="h3">Projet SMOOFRUIT, 2020 à 2022</h3>
+          <p>J'ai créé et piloté ce projet agroalimentaire pendant la licence. C'est là que j'ai appliqué pour la première fois les principes de management de la qualité à une vraie production.</p>
         </div>
-
-        <div class="contact-grid">
-          <div class="contact-info">
-            <h3>Coordonnées Directes</h3>
-            <p style="color: var(--text-secondary); margin-top: 0.5rem;">
-              Basé à Dakar (Sénégal), ouvert aux opportunités régionales et internationales.
-            </p>
-
-            <div class="contact-info-list">
-              <div class="contact-item">
-                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
-                <div class="contact-details">
-                  <h4>Email</h4>
-                  <p id="cv-contact-email">dekan.moussa2@gmail.com</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
-                <div class="contact-details">
-                  <h4>Téléphone</h4>
-                  <p id="cv-contact-phone">+221 78 146 66 26</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
-                <div class="contact-details">
-                  <h4>Localisation</h4>
-                  <p id="cv-contact-location">Dakar, Sénégal</p>
-                </div>
-              </div>
-
-              <div class="contact-item">
-                <div class="contact-icon"><i class="fa-brands fa-linkedin-in"></i></div>
-                <div class="contact-details">
-                  <h4>LinkedIn</h4>
-                  <p><a href="https://linkedin.com/in/moussa-kandé" target="_blank" style="color: var(--accent-primary); text-decoration: underline;">linkedin.com/in/moussa-kandé</a></p>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="contact-form-wrapper">
-            <form class="contact-form" id="contact-form">
-              <div class="form-group">
-                <label for="name" class="form-label">Votre Nom & Société</label>
-                <input type="text" id="name" class="form-input" placeholder="ex: Jean Dupont - Entreprise X" required>
-              </div>
-
-              <div class="form-group">
-                <label for="email" class="form-label">Adresse Email</label>
-                <input type="email" id="email" class="form-input" placeholder="ex: jean@entreprise.com" required>
-              </div>
-
-              <div class="form-group">
-                <label for="subject" class="form-label">Sujet</label>
-                <input type="text" id="subject" class="form-input" placeholder="ex: Opportunité QSE / Mission d'Audit" required>
-              </div>
-
-              <div class="form-group">
-                <label for="message" class="form-label">Message</label>
-                <textarea id="message" class="form-textarea" placeholder="Votre message..." required></textarea>
-              </div>
-
-              <button type="submit" class="btn btn-primary" style="width: 100%;">
-                <i class="fa-solid fa-paper-plane"></i> Envoyer le Message
-              </button>
-            </form>
-          </div>
+        <div data-reveal>
+          <h3 class="h3">Engagements</h3>
+          <ul class="roles">
+            <li><strong>Secrétaire général</strong>, GIE RIQ (Réseau international des qualiticiens), novembre 2024 à mars 2025</li>
+            <li><strong>Secrétaire général</strong>, Club QHSE de l'ISM, 2024</li>
+            <li><strong>Responsable des relations extérieures</strong>, Amicale des Guinéens de l'ISM, 2020 à 2021</li>
+          </ul>
         </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      <h2 class="contact__title">Parlons de votre site.</h2>
+      <p class="contact__lead" data-reveal>Basé à Dakar. Ouvert aux postes QHSE, aux missions d'audit et aux projets de certification ISO, au Sénégal comme ailleurs.</p>
+
+      <div class="contact__grid">
+        <dl class="contact__list">
+          <div>
+            <dt>E-mail</dt>
+            <dd>
+              <a href="mailto:dekan.moussa2@gmail.com" class="contact__mail">dekan.moussa2@gmail.com</a>
+              <button type="button" class="link-btn" id="btn-copy" data-copy="dekan.moussa2@gmail.com">Copier l'adresse</button>
+              <span class="copy-status" id="copy-status" role="status"></span>
+            </dd>
+          </div>
+          <div>
+            <dt>Téléphone</dt>
+            <dd><a href="tel:+221781466626">+221 78 146 66 26</a></dd>
+          </div>
+          <div>
+            <dt>LinkedIn</dt>
+            <dd><a href="https://linkedin.com/in/moussa-kandé" target="_blank" rel="noopener">linkedin.com/in/moussa-kandé</a></dd>
+          </div>
+          <div>
+            <dt>Ville</dt>
+            <dd>Dakar, Sénégal</dd>
+          </div>
+        </dl>
+
+        <form class="form" id="form" novalidate>
+          <label for="f-name">Nom et entreprise</label>
+          <input id="f-name" name="name" type="text" autocomplete="name" required>
+          <label for="f-subject">Objet</label>
+          <input id="f-subject" name="subject" type="text" placeholder="Poste QHSE, mission d'audit…" required>
+          <label for="f-message">Message</label>
+          <textarea id="f-message" name="message" rows="5" required></textarea>
+          <button class="btn" type="submit" data-magnetic>Préparer l'e-mail</button>
+          <p class="form__note" id="form-note">Le message s'ouvre dans votre messagerie, prêt à être envoyé.</p>
+        </form>
       </div>
     </section>
   </main>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <p>&copy; 2026 <span id="footer-name">KANDÉ MOUSSA</span>. QSE / HSE Officer – Systèmes de Management Intégrés (ISO 9001, 14001, 45001).</p>
-    </div>
+  <footer class="foot">
+    <p>Kandé Moussa, coordinateur QHSE. Page mise à jour en novembre 2026.</p>
+    <a href="#top">Retour en haut</a>
   </footer>
 
-  <!-- FLOATING EDIT BUTTON (FAB) -->
-  <button class="edit-fab-btn" id="open-editor-btn" title="Modifier les informations du CV">
-    <i class="fa-solid fa-pen-to-square"></i>
-  </button>
-
-  <!-- LIVE CV EDITOR DRAWER -->
-  <aside class="editor-drawer" id="editor-drawer">
-    <div class="editor-header">
-      <h3><i class="fa-solid fa-sliders"></i> Éditeur de CV en Direct</h3>
-      <button class="close-btn" id="close-editor-btn">&times;</button>
-    </div>
-
-    <div class="editor-body">
-      <p style="font-size: 0.85rem; color: var(--text-muted); margin-bottom: 1.2rem;">
-        Modifiez vos informations ci-dessous. Elles s'appliqueront instantanément sur la page et seront sauvegardées dans votre navigateur.
-      </p>
-
-      <div class="form-group">
-        <label class="form-label">Nom complet</label>
-        <input type="text" id="edit-name" class="form-input" value="KANDÉ MOUSSA">
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Titre professionnel</label>
-        <input type="text" id="edit-title" class="form-input" value="QSE / HSE Officer – Systèmes de Management Intégrés">
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Statut / Localisation</label>
-        <input type="text" id="edit-availability" class="form-input" value="Dakar, Sénégal | Disponible pour opportunités QSE/HSE">
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Résumé professionnel</label>
-        <textarea id="edit-summary" class="form-textarea" rows="4">QHSE officer avec une expérience terrain confirmée en environnement industriel (industrie métallurgique) et bancaire. Spécialisé dans le déploiement et le maintien de Systèmes de Management Intégrés (SMI), la réalisation de DUER et plans de prévention, la conduite d'audits internes, la veille réglementaire et la gestion des indicateurs SST (taux de fréquence, taux de gravité). Certifié ISO 9001 Lead Auditor et Lean Six Sigma Green Belt, avec une culture de la sécurité durable et une approche orientée amélioration continue.</textarea>
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Email</label>
-        <input type="email" id="edit-email" class="form-input" value="dekan.moussa2@gmail.com">
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Téléphone</label>
-        <input type="text" id="edit-phone" class="form-input" value="+221 78 146 66 26">
-      </div>
-
-      <div class="form-group">
-        <label class="form-label">Localisation</label>
-        <input type="text" id="edit-location" class="form-input" value="Dakar, Sénégal">
-      </div>
-    </div>
-
-    <div class="editor-footer">
-      <button class="btn btn-primary" id="save-editor-btn" style="flex: 1;">
-        <i class="fa-solid fa-floppy-disk"></i> Enregistrer
-      </button>
-      <button class="btn btn-outline" id="reset-editor-btn" style="flex: 1;">
-        <i class="fa-solid fa-rotate-left"></i> Réinitialiser
-      </button>
-    </div>
-  </aside>
-
-  <!-- Toast Notification Container -->
-  <div class="toast-container" id="toast-container"></div>
-
-  <!-- JavaScript Script -->
-  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/gsap.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/ScrollTrigger.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.15.1/dist/SplitText.min.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.3.27/dist/lenis.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
